@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Panel de control de proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Importar Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Estilos CSS personalizados -->
+    <style>
+        /* Centrar la tabla horizontalmente */
+        .table-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <h1 class="text-center my-5">Panel de control de proyecto</h1>
+        <!-- Tabla de tareas -->
+        <div class="table-wrapper">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tarea</th>
+                        <th>Tiempo dedicado</th>
+                        <th>Tiempo restante</th>
+                        <th>Fecha estimada de finalización</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarea 1</td>
+                        <td>10 horas</td>
+                        <td>5 horas</td>
+                        <td>1 de mayo de 2023</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    66%
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tarea 2</td>
+                        <td>5 horas</td>
+                        <td>15 horas</td>
+                        <td>10 de mayo de 2023</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    25%
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tarea 3</td>
+                        <td>0 horas</td>
+                        <td>20 horas</td>
+                        <td>20 de mayo de 2023</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    0%
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Resumen del proyecto -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Progreso del proyecto</h5>
+                        <div class="progress my-4">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                50%
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Este es un resumen del progreso general del proyecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tareas completadas</h5>
+                        <p class="card-text">3 de 10 tareas completadas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiempo estimado restante</h5>
+                        <p class="card-text">30 horas restantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Importar JavaScript de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignación de tareas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="text-center mb-4">Asignación de tareas</h1>
+        <form>
+          <div class="form-group">
+            <label for="nombre-tarea">Nombre de la tarea:</label>
+            <input type="text" class="form-control" id="nombre-tarea" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcion-tarea">Descripción de la tarea:</label>
+            <textarea class="form-control" id="descripcion-tarea" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="fecha-inicio">Fecha de inicio:</label>
+            <input type="date" class="form-control" id="fecha-inicio" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha-fin">Fecha de finalización:</label>
+            <input type="date" class="form-control" id="fecha-fin" required>
+          </div>
+          <div class="form-group">
+            <label for="miembro-equipo">Miembro del equipo:</label>
+            <select class="form-control" id="miembro-equipo" required>
+              <option value="">Selecciona un miembro del equipo</option>
+              <option value="1">Miembro 1</option>
+              <option value="2">Miembro 2</option>
+              <option value="3">Miembro 3</option>
+              <option value="4">Miembro 4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dias-asignados">Días asignados:</label>
+            <input type="number" class="form-control" id="dias-asignados" min="1" max="365" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Asignar tarea</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
