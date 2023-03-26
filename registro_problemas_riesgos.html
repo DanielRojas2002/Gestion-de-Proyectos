@@ -7,60 +7,95 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h2 class="text-center mb-4">Registro de problemas y riesgos</h2>
-      
-        <div class="formulario">
-            <form>
-                <div class="form-group">
-                <label for="descripcion">Descripción del problema o riesgo:</label>
-                <textarea class="form-control" id="descripcion" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                <label for="prioridad">Prioridad:</label>
-                <select class="form-control" id="prioridad">
-                    <option>Baja</option>
-                    <option>Media</option>
-                    <option>Alta</option>
-                </select>
-                </div>
-                <div class="form-group">
-                <label for="fecha">Fecha de identificación:</label>
-                <input type="date" class="form-control" id="fecha">
-                </div>
-                <div class="form-group">
-                <label for="responsable">Responsable:</label>
-                <input type="text" class="form-control" id="responsable">
-                </div>
-                <div class="form-group">
-                <label for="estado">Estado:</label>
-                <select class="form-control" id="estado">
-                    <option>Pendiente</option>
-                    <option>En proceso</option>
-                    <option>Resuelto</option>
-                </select>
-                </div>
-                <div class="form-group">
-                <label for="plan">Plan de acción:</label>
-                <textarea class="form-control" id="plan" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                <label for="resultado">Resultado:</label>
-                <textarea class="form-control" id="resultado" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                <label for="comentarios">Comentarios adicionales:</label>
-                <textarea class="form-control" id="comentarios" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
-            </form>
-        </div>
-             
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-danger ">
+      <a class="navbar-brand" href="#">
+        <img src="https://via.placeholder.com/150x50.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a class="nav-link text-white " href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Registro de Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Registro de Tareas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Seguimiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Registro de Problemas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Informes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center mb-4">Registro de problemas y riesgos</h2>
         
+          <div class="formulario">
+              <form>
+                  <div class="form-group">
+                  <label for="descripcion">Descripción del problema o riesgo:</label>
+                  <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                  <label for="prioridad">Prioridad:</label>
+                  <select class="form-control" id="prioridad">
+                      <option>Baja</option>
+                      <option>Media</option>
+                      <option>Alta</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                  <label for="fecha">Fecha de identificación:</label>
+                  <input type="date" class="form-control" id="fecha">
+                  </div>
+                  <div class="form-group">
+                  <label for="responsable">Responsable:</label>
+                  <input type="text" class="form-control" id="responsable">
+                  </div>
+                  <div class="form-group">
+                  <label for="estado">Estado:</label>
+                  <select class="form-control" id="estado">
+                      <option>Pendiente</option>
+                      <option>En proceso</option>
+                      <option>Resuelto</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                  <label for="plan">Plan de acción:</label>
+                  <textarea class="form-control" id="plan" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                  <label for="resultado">Resultado:</label>
+                  <textarea class="form-control" id="resultado" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                  <label for="comentarios">Comentarios adicionales:</label>
+                  <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+              </form>
+          </div>
+               
+          
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+  
 </body>
 </html>
