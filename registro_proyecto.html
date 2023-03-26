@@ -10,7 +10,7 @@
 </head>
 <body class="">
 
-  <header>
+  <header class="">
     <nav class="navbar navbar-expand-md navbar-light  ">
       <a class="navbar-brand" href="#">
         <img src="https://via.placeholder.com/150x50.png" alt="Logo">
@@ -21,23 +21,12 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ml-auto ">
           <li class="nav-item active">
-            <a class="nav-link text-white " href="#">Inicio</a>
+            <a class="nav-link text-white " href="./index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Registro de Proyectos</a>
+            <a class="nav-link text-white" href="./index_sin_login.html">Cerrar Sesion</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Registro de Tareas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Seguimiento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Registro de Problemas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Informes</a>
-          </li>
+        
         </ul>
       </div>
     </nav>
@@ -67,7 +56,12 @@
           <label for="fecha-finalizacion">Fecha de finalización:</label>
           <input type="date" class="form-control" id="fecha-finalizacion">
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="d-flex justify-content-around mb-3 ">
+          <button type="submit" class="btn btn-primary w-100 ">Registrar</button>
+         
+        </div>
+
+        
       </form>
     </div>
   </main>
